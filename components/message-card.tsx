@@ -29,7 +29,7 @@ export function MessageCard({ id, content, createdAt }: MessageCardProps) {
   }
 
   return (
-    <Card className={isPending ? "opacity-50" : ""}>
+    <Card className={`transition-colors duration-150 hover:bg-muted/40 hover:ring-foreground/25 ${isPending ? "opacity-50" : ""}`}>
       <CardContent className="flex items-start justify-between gap-4 p-4">
         <div className="min-w-0 flex-1">
           <p className="whitespace-pre-wrap break-words">{content}</p>
