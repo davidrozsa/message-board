@@ -2,6 +2,8 @@
 
 Egyszerű üzenőfal alkalmazás, ahol bárki üzenetet hagyhat, listázhatja a meglévő üzeneteket, és törölheti azokat. Technikai próbafeladatként készült, AI-asszisztált fejlesztéssel.
 
+**Éles alkalmazás:** [https://message-board-tau-gilt.vercel.app](https://message-board-tau-gilt.vercel.app)
+
 ## Technológiai stack
 
 - **Next.js 14+** (App Router, TypeScript, Server Components & Server Actions)
@@ -9,13 +11,14 @@ Egyszerű üzenőfal alkalmazás, ahol bárki üzenetet hagyhat, listázhatja a 
 - **shadcn/ui** (Button, Input, Card, Sonner)
 - **lucide-react** (ikonok)
 - **Supabase** (PostgreSQL adatbázis, Row Level Security)
+- **Vercel** (deploy & hosting)
 
 ## Lokális futtatás
 
 ### 1. Klónozás és telepítés
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/davidrozsa/message-board.git
 cd message-board
 npm install
 ```
@@ -48,7 +51,7 @@ Az alkalmazás elérhető a [http://localhost:3000](http://localhost:3000) címe
 
 ## Deploy (Vercel)
 
-A projekt közvetlenül deployolható Vercelre. A környezeti változókat a Vercel dashboard **Settings → Environment Variables** részen kell megadni.
+A projekt a Vercel platformon fut. A környezeti változókat a Vercel dashboard **Settings → Environment Variables** részen kell megadni. Minden `main` branch-re érkező push automatikus deploy-t triggerel.
 
 ## Funkciók
 
